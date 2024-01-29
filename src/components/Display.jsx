@@ -1,9 +1,10 @@
-/*import result from "../utils/result"
+/*import result from "../utils/result"*/
 
 const Display = () => {
-    render() {
-        return(
-            result;
-        )
-    }
-}*/
+    return(
+        <div className="display">
+        </div>
+    )
+};
+
+export default Display;

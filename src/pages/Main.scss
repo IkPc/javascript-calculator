@@ -4,15 +4,19 @@ $input-width: 100px;
 .content {
     display: flex;
     background-color: #000000;
-    height: 70%;
-    width: 100%;
     padding: 15px;
     border: 2px solid #3498db;
     border-radius: 5px;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
-/*Display*/
+.display {
+    height: 100px;
+    color: white;
+    background-color: #2b2a2a;
+    margin-bottom: 10px;
+}
 
 input {
     all: unset;
