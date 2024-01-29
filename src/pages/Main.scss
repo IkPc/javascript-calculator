@@ -1,0 +1,67 @@
+$input-height: 60px;
+$input-width: 100px;
+
+.content {
+    display: flex;
+    background-color: #000000;
+    height: 70%;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+/*Display*/
+
+input {
+    all: unset;
+    height: $input-height;
+    width: $input-width;
+    background-color: #3498db;
+    box-shadow: 2px -2px 5px #153d58;
+    color: #fff; 
+    display: flex;
+    place-items: center; 
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+} 
+
+input:active {
+    background-color: #2774a7;
+    transform: scale(0.95);
+}
+
+#clear {
+    background-color: rgb(117, 34, 34);
+    &:active {
+        background-color: rgb(63, 19, 19);
+    }
+}
+
+#clear,
+#zero {
+    width: ($input-width * 2) + 8px;
+}
+
+#divide,
+#multiply,
+#subtract,
+#add {
+    background-color: #5da6d6;
+    &:active {
+        background-color: #37617c;
+    }
+}
+
+#equals {
+    height: ($input-height * 2) + 8px;
+    background-color: rgb(49, 189, 112);
+    &:active {
+        background-color: rgb(24, 95, 56);
+    }
+  }
