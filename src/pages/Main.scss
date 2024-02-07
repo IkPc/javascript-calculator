@@ -23,7 +23,7 @@ input {
     height: $input-height;
     width: $input-width;
     background-color: #3498db;
-    box-shadow: 2px -2px 5px #153d58;
+    box-shadow: 2px -2px 5px #333333;
     color: #fff; 
     display: flex;
     place-items: center; 
@@ -37,7 +37,7 @@ input {
 
 input:active {
     background-color: #2774a7;
-    transform: scale(0.95);
+    transform: scale(0.95), ;
 }
 
 #clear {
@@ -69,3 +69,8 @@ input:active {
         background-color: rgb(24, 95, 56);
     }
   }
+
+#display {
+    all: unset;
+    float: right;
+}

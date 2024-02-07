@@ -1,10 +1,13 @@
-/*import result from "../utils/result"*/
+import React, { useState } from 'react';
 
 const Display = () => {
-    return(
-        <div className="display">
-        </div>
-    )
+  const [currentInput, setCurrentInput] = useState('');
+
+  return (
+    <div className="display">
+      <input id='display' type="text" value={currentInput} readOnly />
+    </div>
+  );
 };
 
 export default Display;

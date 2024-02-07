@@ -8,7 +8,7 @@ const Main = () => (
         <div className="header">
         </div>
         <div className="content">
-            <Display />
+            <Display/>
             <Buttons />
         </div>
         <div className="footer">
