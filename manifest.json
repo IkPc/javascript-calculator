@@ -1,0 +1,8 @@
+{
+  "short_name": "JS Calculator",
+  "name": "JavaScript Calculator",
+  "start_url": "%PUBLIC_URL%/JavaScript-Calculator",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
