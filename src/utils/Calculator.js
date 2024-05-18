@@ -60,17 +60,23 @@ const handleDecimal = (input) => {
 };
 
 const handleOperator = (input, value) => {
-  if (!input) return value;
-  if (input === 'Error') return value;
+  if (!input || input === 'Error') return value;
 
   const lastChar = input.slice(-1);
   const secondLastChar = input.slice(-2, -1);
 
   if ('+-*/'.includes(lastChar)) {
-    if (value === '-' && !'+-*/'.includes(secondLastChar)) {
+    if (value === '-') {
+      // Allow a negative sign following an operator
       return input + value;
+    } else {
+      // Replace the last operator with the new one, ignoring any preceding negative sign
+      if ('+-*/'.includes(secondLastChar)) {
+        return input.slice(0, -2) + value;
+      } else {
+        return input.slice(0, -1) + value;
+      }
     }
-    return input.slice(0, -1) + value;
   }
 
   return input + value;
