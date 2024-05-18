@@ -8,13 +8,12 @@ const Main = () => {
   const [currentInput, setCurrentInput] = useState('');
 
   const handleClick = (value) => {
-    setCurrentInput((prevInput) => {
-      const newInput = handleButtonClick(prevInput, value);
+    setCurrentInput((currentInput) => {
+      const newInput = handleButtonClick(currentInput, value);
       console.log(`Main Component - currentInput: ${newInput}`);
       return newInput;
     });
   };
-  
 
   useEffect(() => {
     console.log(`Main Component - currentInput: ${currentInput}`);
@@ -31,5 +30,6 @@ const Main = () => {
     </div>
   );
 };
+
 
 export default Main;
