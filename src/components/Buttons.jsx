@@ -1,8 +1,10 @@
 import React from "react";
+import Keyboard from "../utils/Keyboard";
 
 const Buttons = ({handleButtonClick}) => {
   return (
     <div id="nums">
+      <Keyboard />
       <table>
         <tbody>
             <tr>
