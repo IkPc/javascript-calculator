@@ -1,7 +1,7 @@
 {
   "short_name": "JS Calculator",
   "name": "JavaScript Calculator",
-  "start_url": "/JavaScript-Calculator",
+  "start_url": "https://ikpc.github.io/javascript-calculator/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

@@ -32,17 +32,26 @@ td input {
     transition: background-color 0.2s ease, transform 0.2s ease;
     font-size: larger;
     align-items: center;
-    justify-content: center;
+    text-align: center;
     margin: 3px;
+    border-radius: 2px;
 } 
+
+td input:hover {
+    background-color: #2d86c2;
+}
 
 input:active {
     background-color: #2774a7;
-    transform: scale(0.95), ;
+    transform: scale(0.98) ;
+    box-shadow: 1px -1px 1px #2c2c2c;
 }
 
 #clear {
     background-color: rgb(117, 34, 34);
+    &:hover{
+        background-color: rgb(105, 31, 31);
+    }
     &:active {
         background-color: rgb(63, 19, 19);
     }
@@ -58,6 +67,9 @@ input:active {
 #subtract,
 #add {
     background-color: #5da6d6;
+    &:hover {
+        background-color: #5394be;
+    }
     &:active {
         background-color: #37617c;
     }
@@ -66,6 +78,9 @@ input:active {
 #equals {
     height: ($input-height * 2) + 8px;
     background-color: rgb(49, 189, 112);
+    &:hover {
+        background-color: rgb(39, 161, 94);
+    }
     &:active {
         background-color: rgb(24, 95, 56);
     }
